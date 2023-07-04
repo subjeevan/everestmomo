@@ -1,0 +1,26 @@
+
+.indexed{
+    z-index: 2;
+
+}
+
+
+.images-container {
+
+    display: flex;
+    margin: 32px;
+
+}
+
+.eclip {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.momo {
+    position: absolute;
+    top:200px;  
+    right: 100px;
+}
