@@ -32,20 +32,19 @@
                                 <div class="contact-wrap w-100 p-md-5 p-4">
                                     <div id="form-message-warning" class="mb-4"></div>
                                     <div id="form-message-success" class="mb-4">
-                                        {%if message%}
-                                        {%for messages in message%}
+                                        {%if messages%}
+                                        {%for message in messages%}
                                         {{message}}
                                         {% endfor %}
                                         {% endif %}
                                     </div>
-                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm"
-                                        novalidate="novalidate">
+                                    <form method="POST" >
                                         {%csrf_token%}
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="label" for="name">First Name</label>
-                                                    <input type="text" class="form-control" name="name" id="name"
+                                                    <input type="text" required class="form-control" name="fname" id="name"
                                                         placeholder="Name">
                                                     <div data-lastpass-icon-root="true"
                                                         style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
@@ -55,8 +54,8 @@
 
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="label" for="name">Last Name</label>
-                                                    <input type="text" class="form-control" name="name" id="name"
+                                                    <label class="label"  for="lname">Last Name</label>
+                                                    <input type="text" required class="form-control" name="lname" id="lname"
                                                         placeholder="Name"><br>
                                                     <div data-lastpass-icon-root="true"
                                                         style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
@@ -67,23 +66,23 @@
 
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="label" for="email">Mobile No</label>
-                                                    <input type="email" class="form-control" name="email" id="email"
-                                                        placeholder="Email"><br>
+                                                    <label class="label"  for="mobile">Mobile No</label>
+                                                    <input type="number" required class="form-control" name="mobile" id="mobile"
+                                                        placeholder="Mobile No"><br>
                                                 </div>
                                             </div>
 
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="label" for="email">Email Address</label>
-                                                    <input type="email" class="form-control" name="email" id="email"
+                                                    <label class="label"  for="email">Email Address</label>
+                                                    <input type="email" required class="form-control" name="email" id="email"
                                                         placeholder="Email"><br>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label class="label" for="#">Message</label>
-                                                    <textarea name="message" class="form-control" id="message" cols="30"
+                                                    <label class="label"  for="message">Message</label>
+                                                    <textarea name="message" required class="form-control" id="message" cols="30"
                                                         rows="4" placeholder="Message"></textarea><br>
                                                 </div>
                                             </div>
