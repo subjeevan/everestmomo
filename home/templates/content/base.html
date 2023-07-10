@@ -1,23 +1,35 @@
 <!doctype html>
 {% load static %}
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="{%static 'css/home.css'%}">
-    <link href="{%static 'dist/css/bootstrap.min.css'%}" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
-  <body>
-    <script src="{%static 'dist/js/bootstrap.bundle.min.js'%}" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="{%static 'css/home.css'%}">
+  <link rel="stylesheet" href="{%static 'css/public/global.css'%}">
+  <link rel="stylesheet" href="{%static 'css/public/index.css'%}">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Proxima Nova:wght@300;400;600;700&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;1,400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" />
+  <link href="{%static 'dist/css/bootstrap.min.css'%}" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="{%static 'dist/js/bootstrap.bundle.min.js'%}"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
 
 {%include 'content/header.html'%}
- 
+
 {%block content%}
 
 {%endblock%}
 
 {%include 'content/footer.html'%}
-
