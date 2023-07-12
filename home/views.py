@@ -4,5 +4,5 @@ from .models import FoodMenu
 
 def home(request):
     dish=FoodMenu.objects.all()
-    return render(request,'home.html',{'dish':dish})
+    return render(request,'home.html',{'dishes':dish})
 
